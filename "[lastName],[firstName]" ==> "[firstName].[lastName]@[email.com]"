@@ -1,3 +1,7 @@
 =CONCATENATE(MID(A3,(FIND(",",A3,1)+2),8),".",MID(A3,1,(FIND(",",A3,1)-1)),"@email.com")
 
 Smith,John ==> John.Smith@email.com
+
+Psuedocode: Concatenate string A + "." + string B + "@email.com"
+- Where string A is first name, or all characters AFTER the comma
+- Where string B is the last name, or all characters BEFORE the comma
